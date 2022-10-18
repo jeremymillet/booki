@@ -1,5 +1,7 @@
 html{
-    max-width: 1440px;
+    
+    display: flex;
+    justify-content: center;
 }
 /* font*/
 h1,h2,h3,p,a{
@@ -34,39 +36,39 @@ main{
     display:flex;
 }
 
-.menu{
+#menu{
     margin-right: 77px;
     margin-top: 48px;
     
 }
-.hebergements{
+#nav-hebergements{
     margin-right: 67px;
     text-decoration: none;
     
 }
-.activites{
+#nav-activites{
     text-decoration: none;
 }
-.logo{
+#logo{
     margin-top: 44px;
     margin-left: 55px;
     margin-bottom: 63px;
 }
-.logo img{
+#logo img{
     width: 61px;
     height: 19px;
 }
 
 /* header hover animation*/
 
-.hebergements:hover {
+#nav-hebergements:hover {
     border-top: solid #0065FC ;
-    padding-top: 46px;
+    padding-top: 48px;
     color: #0065FC;
 }
-.activites:hover {
+#nav-activites:hover {
     border-top: solid #0065FC ;
-    padding-top: 46px;
+    padding-top: 48px;
     color: #0065FC;
     
 }
@@ -74,15 +76,15 @@ main{
 
 /*  texte*/
 
-.before-main{
+#before-main{
     margin-left:55px;
 }
 
-.rectangle{
+#rectangle{
     display: flex;
     margin-top: 20px;
 }
-.rectangle .map-marker{
+#rectangle #map-marker{
     width: 50px;
     height: 49px;
     display: flex;
@@ -94,13 +96,13 @@ main{
     background-color:#F2F2F2;
 
 }
-.rectangle img{
+#rectangle img{
     width: 14px;
     height: 18px;
 
 }
-.rectangle input{
-    width: 282px;
+#rectangle input{
+    width: 236px;
     height: 49px;
     padding: 0;
     border-width: 1px;
@@ -109,10 +111,11 @@ main{
     font-weight: 700;
     padding-left: 16px;
     font-family:'Raleway', sans-serif;
+
 }
 
 
-.button-recherche button{
+#button-recherche button{
     display: flex;
     height: 49px;
     width: 132px;
@@ -123,34 +126,31 @@ main{
     border-top-right-radius: 15px;
     border: none;
     color:white ;
-    position: absolute;
-    left: 341px;
-    top: 200px;
     font-family:'Raleway', sans-serif;
     cursor: pointer;
 }
 
 /* recherche */
 
-.filter{
+#filter{
     display: flex;
     margin-top: 32px;
     width: 914px;
     height: 50px;
     align-items: center;
 }
-.button-filtre{
+#button-filtre{
     margin-left:32px ;
 }
 
-.nblogement{
+#nblogement{
     display:flex;
     margin-top: 38px;
 }
-.nblogement p {
+#nblogement p {
     height: 19px;
 }
-.info{
+#info{
     display: flex;
     justify-content: center;
     width: 24px;
@@ -160,7 +160,7 @@ main{
     margin-right: 11px;
     
 }
-.info i {
+#info i {
     color: #0065FC;
     padding-top: 2px; 
 }
@@ -168,9 +168,13 @@ main{
 
 /* filter */
 
-.button-filtre{
+#button-filtre{
     display:flex;
     align-items: center;
+}
+#button-filtre .button i {
+    margin-right: 10px;
+    color: #0065FC;
 }
 
 .button{
@@ -189,7 +193,7 @@ main{
 
 /* main annonce */
 
-.article1{
+#hebergements{
     margin-left:50px;
     width: 880px;
     height: 626px;
@@ -198,16 +202,16 @@ main{
     border-radius: 20px;
     
 }
-.titre{
+#titre-herbergement{
     margin-left: 40px;
     margin-bottom: 23px;
     padding-top:42px ;
 }
 
-.section{
+#annonce-top{
     display: flex;
 }
-.section2{
+#annonce-bottom{
     display: flex;
     margin-top: 30px;
 }
@@ -220,6 +224,7 @@ main{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background: #FFFFFF;
     border-radius: 20px;
+    
 }
 .card{
     width: 246px;
@@ -228,6 +233,7 @@ main{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background: #FFFFFF;
     border-radius: 20px;
+   
 }
 
 .card-text{
@@ -245,15 +251,15 @@ main{
 /* etoile */
 .etoile{
     height: 12px;
-    width: 68px;
+    width: 100px;
     margin-left:16px;
     margin-top: 9px;
 }
 .etoile i {
-    width: 12px;
-    height: 12px;
-    padding-right:2px;
     color: #0065FC;
+}
+#transparent {
+    color: grey;
 }
 /* img */
 
@@ -332,16 +338,14 @@ main{
 }
 /* etoile */
 .card2 .etoile{
-    display: flex;
     height: 12px;
-    width: 68px;
+    width: 100px;
     margin-left:16px;
     margin-top: 44px;
 }
 .card2 .etoile i {
     width: 12px;
     height: 12px;
-    padding-right:2px;
     color: #0065FC;
 }
 /* img */
@@ -349,7 +353,7 @@ main{
 
 /* activités */
 
-.container{
+#activités{
     margin-top: 60px;
     margin-left: 50px;
     width: 1337px;
@@ -396,130 +400,162 @@ main{
     margin-top: 20px;
 }
 
-
-.card0 .photo1{
-    background: url("/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
-    width: 246px;
-    height:124px;
+.card0 #photo-auberge-canebiere{
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-}
-
-.card .photo2{
-    background: url("/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
+    overflow: hidden;
     width: 246px;
     height:124px;
+}
+.card0 #photo-auberge-canebiere img{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
+}
+.card #photo-hotel-du-port{
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-}
-
-.card .photo3{
-    background: url("/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
+    overflow: hidden;
     width: 246px;
     height:124px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
 }
-.card0 .photo4{
-    background: url("/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
-    width: 246px;
-    height:124px;
-    border: 5px solid #FFFFFF;
+.card #photo-hotel-du-port img{
     border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
 }
 
-.card .photo5{
-    background: url("/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
-    width: 246px;
-    height:124px;
+.card > div:first-child {
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-}
-
-.card .photo6{
-    background: url("/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
+    overflow: hidden;
     width: 246px;
     height:124px;
-    border: 5px solid #FFFFFF;
+}
+.card img {
     border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
 }
 
-.card2 .photo7{
-    background: url("/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: 170%;
-    background-position: 50%;
+.card0 #photo-hotel-de-la-mer{
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    width: 246px;
+    height:124px;
+}
+.card0 #photo-hotel-de-la-mer img{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -50px;
+}
+
+.card #photo-auberge-le-panier{
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    width: 246px;
+    height:124px;
+}
+.card #photo-auberge-le-panier img{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -8px;
+}
+
+
+.card #photo-hotel-chez-amira{
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    width: 246px;
+    height:124px;
+}
+.card #photo-hotel-chez-amira img{
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -120px;
+}
+
+.card2 #photo-hotel-le-soleil-du-matin{
     width: 137px;
     height: 144px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
 }
-.card2 .photo8{
-    background: url("/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: 170%;
-    background-position: 50%;
-    width: 137px;
-    height: 144px;
+.card2 #photo-hotel-le-soleil-du-matin img{
+    height: 100%; 
+    border-radius: 20px 0px 0px 20px;
+    max-width: 200%;
+    margin-left:-40px ;
+}
+
+.card2 #photo-chambre-au-coeur-de-l-eau{
     border: 5px solid #FFFFFF;
+    overflow: hidden;
+    width: 137px;
+    height:144px;
     border-radius: 20px 0px 0px 20px;
 }
-.card2 .photo9{
-    background: url("/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-size: 105%;
-    background-position: 50%;
-    width: 137px;
-    height: 144px;
+.card2 #photo-chambre-au-coeur-de-l-eau img{
+    border-radius: 20px 0px 0px 20px;
+    max-width: 150%;
+    margin-left: -30px;
+}
+
+.card2 #photo-hotel-bleu-et-blanc{
     border: 5px solid #FFFFFF;
+    overflow: hidden;
+    width: 137px;
+    height:144px;
     border-radius: 20px 0px 0px 20px;
 }
-
-
-.card3 .photo10{
-    background: url("/Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: 225%;
-    background-position: 50%;
-    width: 302px;
-    height:444.51px;
-    border-radius: 20px;
+.card2 #photo-hotel-bleu-et-blanc img{
+    border-radius: 20px 0px 0px 20px;
+    max-width: 115%;
+    margin-top: -50px;
+    margin-left: -15px;
+   
 }
 
-.card3 .photo11{
-    background: url("/Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: 100%;
-    background-position: 50%;
+.card3 #photo-vieux-port{
     width: 302px;
     height:444.51px;
     border-radius: 20px;
+    overflow: hidden;
+}
+.card3 #photo-vieux-port img{
+    max-width: 230%;
+    margin-left: -200px;
+    
 }
 
-.card3 .photo12{
-    background: url("/Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: 225%;
-    background-position: 50%;
-    background-size: 225%;
-    background-position: 50%;
+.card3 #photo-fort-de-pomègues{
     width: 302px;
     height:444.51px;
     border-radius: 20px;
+    overflow: hidden;
 }
-.card3 .photo13{
-    background: url("/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: 235%;
-    background-position: 50%;
+.card3 #photo-fort-de-pomègues img{
+    max-width: 100%;
+}
+
+.card3 #photo-parc-national-des-calanques{
     width: 302px;
     height:444.51px;
     border-radius: 20px;
+    overflow: hidden;
+}
+.card3 #photo-parc-national-des-calanques img{
+    max-width: 200%;
+    margin-left:-150px;
+}
+
+.card3 #photo-notre-dame-de-ma-garde{
+    width: 302px;
+    height:445px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card3 #photo-notre-dame-de-ma-garde img{
+    max-width: 300%;
+    margin-left:-150px;
 }
 
 
