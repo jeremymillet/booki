@@ -26,7 +26,7 @@ p{
 /* header*/
 header{
     display:flex;
-    justify-content: space-between;
+    
 }
 a{
     text-decoration: none;
@@ -37,17 +37,33 @@ main{
 }
 
 #menu{
-    margin-right: 77px;
-    margin-top: 48px;
+    display: flex;
+    margin-left: 975px;
     
 }
 #nav-hebergements{
-    margin-right: 67px;
     text-decoration: none;
     
 }
 #nav-activites{
     text-decoration: none;
+    
+}
+#nav-container-hebergement{
+    width: 162px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#nav-container-activites{
+    width: 162px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 #logo{
     margin-top: 44px;
@@ -61,14 +77,12 @@ main{
 
 /* header hover animation*/
 
-#nav-hebergements:hover {
+#nav-container-hebergement:hover {
     border-top: solid #0065FC ;
-    padding-top: 48px;
     color: #0065FC;
 }
-#nav-activites:hover {
+#nav-container-activites:hover {
     border-top: solid #0065FC ;
-    padding-top: 48px;
     color: #0065FC;
     
 }
@@ -80,11 +94,11 @@ main{
     margin-left:55px;
 }
 
-#rectangle{
+#recherche-container{
     display: flex;
     margin-top: 20px;
 }
-#rectangle #map-marker{
+#recherche-container #map-marker{
     width: 50px;
     height: 49px;
     display: flex;
@@ -96,12 +110,12 @@ main{
     background-color:#F2F2F2;
 
 }
-#rectangle img{
+#recherche-container img{
     width: 14px;
     height: 18px;
 
 }
-#rectangle input{
+#recherche-container input{
     width: 236px;
     height: 49px;
     padding: 0;
@@ -115,7 +129,7 @@ main{
 }
 
 
-#button-recherche button{
+#button-search button{
     display: flex;
     height: 49px;
     width: 132px;
@@ -139,7 +153,7 @@ main{
     height: 50px;
     align-items: center;
 }
-#button-filtre{
+#button-filter{
     margin-left:32px ;
 }
 
@@ -168,11 +182,11 @@ main{
 
 /* filter */
 
-#button-filtre{
+#button-filter{
     display:flex;
     align-items: center;
 }
-#button-filtre .button i {
+#button-filter .button i {
     margin-right: 10px;
     color: #0065FC;
 }
