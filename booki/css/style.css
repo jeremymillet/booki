@@ -202,38 +202,43 @@ main{
     border-radius: 20px;
     
 }
-#titre-herbergement{
+#titre-hebergement{
     margin-left: 40px;
     margin-bottom: 23px;
     padding-top:42px ;
 }
 
-#annonce-top{
+#annonce-hebergement{
     display: flex;
-}
-#annonce-bottom{
-    display: flex;
-    margin-top: 30px;
-}
-/*card */
-.card0{
-    width: 246px;
-    height: 199px;
-    margin-left: 40px;
-    margin-right: 31px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    background: #FFFFFF;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
-.card{
+
+/*card */
+
+.card-hebergement{
     width: 246px;
     height: 199px;
-    margin-right: 31px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background: #FFFFFF;
     border-radius: 20px;
+    margin-bottom: 30px;
    
+}
+.card-hebergement > div:first-child {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    width: 246px;
+    height:124px;
+    
+}
+.card-hebergement img {
+    border-radius: 20px 20px 0px 0px;
+    width: 246px;
+    height: 124px;
+    object-fit:cover;
 }
 
 .card-text{
@@ -268,7 +273,7 @@ main{
 /* affichez plus  */
 .plus{
     margin-left: 44px;
-    margin-top: 40px;
+    
     text-decoration: none;
 }
 .plus p{
@@ -278,7 +283,7 @@ main{
 
 
 /* les plus populaires  */
-.article2{
+#les-plus-populaires{
     margin-left:50px;
     width: 420px;
     height: 625px;
@@ -287,19 +292,19 @@ main{
     margin-top: 39px;
     
 }
-.article2 .titre2{
+#les-plus-populaires #titre-populaires{
     display:flex;
     margin-left: 37px;
     justify-content: space-between;
     align-items: center;
 }
-.article2 .titre2 p{
+#les-plus-populaires #titre-populaires p{
     font-size:22px;
     font-weight: 700;
     margin-top: 41px;
 }
 
-.article2 .titre2 i{
+#les-plus-populaires #titre-populaires i{
     margin-right:42px;
     margin-top: 46px;
     color: #0065FC;
@@ -307,7 +312,7 @@ main{
 
 /* les plus populaires  card */
 
-.card2{
+.card-populaires{
     width: 343px;
     height: 144px;
     margin-right: 40px;
@@ -319,12 +324,12 @@ main{
     margin-top: 26px;
     margin-bottom:33px;
 }
-.card2 .text-etoile{
+.card-populaires .text-etoile{
     display: flex;
     flex-direction: column;
 }
 
-.card2 .card-text{
+.card-populaires .card-text{
     width: 169px;
     height: 60px;
     margin-top: 16px;
@@ -332,28 +337,42 @@ main{
     margin-left:16px ;
    
 }
-.card2 .card-text p{
+.ccard-populaires .card-text p{
     font-size:14px;
     font-weight:400 ;
 }
 /* etoile */
-.card2 .etoile{
+.card-populaires .etoile{
     height: 12px;
     width: 100px;
     margin-left:16px;
     margin-top: 44px;
 }
-.card2 .etoile i {
+.card-populaires.etoile i {
     width: 12px;
     height: 12px;
     color: #0065FC;
 }
-/* img */
+/* card-populaire */
+.card-populaires > div:first-child {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    width: 137px;
+    height:144px;
+    
+}
+.card-populaires img {
+    border-radius: 20px 0px 0px 20px;
+    width: 137px;
+    height: 144px;
+    object-fit:cover;
+}
 
 
 /* activités */
 
-#activités{
+#activites{
     margin-top: 60px;
     margin-left: 50px;
     width: 1337px;
@@ -361,18 +380,18 @@ main{
     margin-bottom: 61px;
 }
 
-.article3{
+#annonce-activites{
     display: flex;
     margin-top: 18px;
 }
-.titre3 p{
+#titre-activites p{
     font-size: 22px;
     font-weight: 700;
 }
 
-/*card */
+/*card activités*/
 
-.card3{
+.card-activites{
     width: 302px;
     height: 444.51px;
     margin-right: 50px;
@@ -381,7 +400,7 @@ main{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card3 .card-texte{
+.card-activites .card-texte{
     width: 302px;
     height: 56px;
     display: flex;
@@ -395,170 +414,24 @@ main{
     border-radius: 0px 0px 20px 20px;
    
 }
-.card3 .card-texte H2{
+.card-activites .card-texte H2{
     padding-left:19px;
     margin-top: 20px;
 }
-
-.card0 #photo-auberge-canebiere{
+.card-activites > div:first-child {
     border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card0 #photo-auberge-canebiere img{
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -20px;
-}
-.card #photo-hotel-du-port{
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card #photo-hotel-du-port img{
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -20px;
-}
-
-.card > div:first-child {
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card img {
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -20px;
-}
-
-.card0 #photo-hotel-de-la-mer{
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card0 #photo-hotel-de-la-mer img{
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -50px;
-}
-
-.card #photo-auberge-le-panier{
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card #photo-auberge-le-panier img{
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -8px;
-}
-
-
-.card #photo-hotel-chez-amira{
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 246px;
-    height:124px;
-}
-.card #photo-hotel-chez-amira img{
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -120px;
-}
-
-.card2 #photo-hotel-le-soleil-du-matin{
-    width: 137px;
-    height: 144px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
-    overflow: hidden;
-}
-.card2 #photo-hotel-le-soleil-du-matin img{
-    height: 100%; 
-    border-radius: 20px 0px 0px 20px;
-    max-width: 200%;
-    margin-left:-40px ;
-}
-
-.card2 #photo-chambre-au-coeur-de-l-eau{
-    border: 5px solid #FFFFFF;
-    overflow: hidden;
-    width: 137px;
-    height:144px;
-    border-radius: 20px 0px 0px 20px;
-}
-.card2 #photo-chambre-au-coeur-de-l-eau img{
-    border-radius: 20px 0px 0px 20px;
-    max-width: 150%;
-    margin-left: -30px;
-}
-
-.card2 #photo-hotel-bleu-et-blanc{
-    border: 5px solid #FFFFFF;
-    overflow: hidden;
-    width: 137px;
-    height:144px;
-    border-radius: 20px 0px 0px 20px;
-}
-.card2 #photo-hotel-bleu-et-blanc img{
-    border-radius: 20px 0px 0px 20px;
-    max-width: 115%;
-    margin-top: -50px;
-    margin-left: -15px;
-   
-}
-
-.card3 #photo-vieux-port{
-    width: 302px;
-    height:444.51px;
     border-radius: 20px;
     overflow: hidden;
-}
-.card3 #photo-vieux-port img{
-    max-width: 230%;
-    margin-left: -200px;
-    
-}
-
-.card3 #photo-fort-de-pomègues{
-    width: 302px;
-    height:444.51px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.card3 #photo-fort-de-pomègues img{
-    max-width: 100%;
-}
-
-.card3 #photo-parc-national-des-calanques{
-    width: 302px;
-    height:444.51px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.card3 #photo-parc-national-des-calanques img{
-    max-width: 200%;
-    margin-left:-150px;
-}
-
-.card3 #photo-notre-dame-de-ma-garde{
     width: 302px;
     height:445px;
+    
+}
+.card-activites img {
     border-radius: 20px;
-    overflow: hidden;
+    width: 302px;
+    height:445px;
+    object-fit:cover;
 }
-.card3 #photo-notre-dame-de-ma-garde img{
-    max-width: 300%;
-    margin-left:-150px;
-}
-
-
 
 footer{
     display: flex;
