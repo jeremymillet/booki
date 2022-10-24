@@ -171,7 +171,7 @@ main{
 }
 #info i {
     color: #0065FC;
-    padding: 20%; 
+    padding: 50%; 
 }
 
 
@@ -292,6 +292,7 @@ main{
 .plus{
     margin-left: 5%;
     text-decoration: none;
+    margin-bottom: 6%;
 }
 .plus p{
     font-size: 18px;
@@ -302,7 +303,7 @@ main{
 /* les plus populaires  */
 #les-plus-populaires{
     margin-left:4%;
-    width: 30%;
+    width: 25%;
     height: auto;
     max-height: 650px;
     background-color: #F2F2F2;
@@ -329,11 +330,17 @@ main{
     margin-top: 10%;
     color: #0065FC;
 }
-
+#annonce-populaires{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 /* les plus populaires  card */
 .lien-card-populaires{
     min-width: 222px;
-    width: 32%; 
+    width: 100%; 
+  
 }
 .card-populaires{
     width: 85%;
@@ -345,7 +352,7 @@ main{
     display: flex;
     margin-left:9%;
     margin-top: 6%;
-    margin-bottom:8%;
+    
 }
 .card-populaires .text-etoile{
     display: flex;
@@ -392,7 +399,7 @@ main{
     height: 100%;
     min-width:120px;
     max-height: 140px;
-    min-height: 170px;
+    min-height: 140px;
     object-fit:cover;
 }
 
@@ -402,7 +409,7 @@ main{
 #activites{
     margin-top: 4%;
     margin-left: 4%;
-    width: 100%;
+    width: 95%;
     margin-bottom: 4%;
     display: flex;
     flex-direction: column;
@@ -467,7 +474,7 @@ main{
     height:100%;
     object-fit:cover;
 }
-
+/*footer*/
 footer{
     display: flex;
     justify-content: space-around;
@@ -497,9 +504,143 @@ ul h3{
     padding-bottom: 20px;
 }
 
-@media (max-width: 992px){
+/*tablette*/
+@media (max-width: 991px){
 body{
-    background-color: black;
+    max-width: 991px;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+#filter {
+    display: flex;
+    margin-top: 2.5%;
+    width: 95%;
+    align-items: center;
+}
+.button {
+    display: flex;
+    width: auto;
+    margin-right: 2%;
+    padding: 1% 3%;
+    border-radius: 25px;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+}
+.button p  {
+    display: flex;
+    font-size: 80%;
+}
+#button-filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#info i {
+    color: #0065FC;
+    padding: 50%;
+    
+}
+
+
+/*herbergement*/
+#hebergements {
+    margin-left: 4%;
+    max-width: 900px;
+    width: 90%;
+    background-color: #F2F2F2;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+#annonce-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+/*populaires*/
+#les-plus-populaires #titre-populaires{
+    display:flex;
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+#les-plus-populaires #titre-populaires p{
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+#les-plus-populaires #titre-populaires i{
+    margin-right:5%;
+    margin-top: 3%;
+    color: #0065FC;
+}
+#annonce-populaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+#les-plus-populaires{
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    margin-left: 4%;
+    width: 90%;
+    height: 300px;
+    max-height: 1000px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 3%;
+    max-width: 900px;
+}
+.card-populaires {
+    width: 85%;
+    height: 23%;
+    max-height: 25%;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 7%;
+    margin-top: 6%;
+}
+.card-populaires .card-text {
+    width: auto;
+    height: 69px;
+    margin-top: 8%;
+    display: flex;
+    margin-left: 0px;
+}
+.card-populaires .text-etoile {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 20%;
+    min-width: 116px;
+}
+.card-populaires .card-text p{
+    font-size: 90%;
+}
+.card-populaires .card-text H2{
+    font-size: 90%;
+}
+.card-populaires > div:first-child {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    width: 40%;
+    min-width: 100px;
 }
     
+/*mobile*/
+@media (max-width: 768px){
+body{
+    background-color: blue;
+}
+    
+}
