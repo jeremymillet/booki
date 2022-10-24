@@ -36,6 +36,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 main{
     display:flex;
 }
@@ -336,6 +337,7 @@ main{
 }
 .card-populaires{
     width: 85%;
+    height: 23%;
     max-height: 25%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background: #FFFFFF;
@@ -349,6 +351,8 @@ main{
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 20%;
+    
 }
 
 .card-populaires .card-text{
@@ -365,7 +369,9 @@ main{
 /* etoile */
 .card-populaires .etoile{
     width: 100%;
-    padding-top: 20%;
+    position: absolute;
+    top: 80%;
+   
 }
 .card-populaires.etoile i {
     width: 100%;
@@ -377,11 +383,14 @@ main{
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
     width:40%;
+    min-width: 110px;
+    
 }
 .card-populaires img {
     border-radius: 20px 0px 0px 20px;
     width: 100%;
     height: 100%;
+    min-width:120px;
     max-height: 140px;
     min-height: 170px;
     object-fit:cover;
@@ -394,7 +403,6 @@ main{
     margin-top: 4%;
     margin-left: 4%;
     width: 100%;
-    height: 493px;
     margin-bottom: 4%;
     display: flex;
     flex-direction: column;
@@ -422,7 +430,7 @@ main{
 }
 .card-activites{
     width: 100%;
-    height: 444.51px;
+    height: 100%;
     background: #FFFFFF;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -434,7 +442,6 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 56px;
     left: 0%;
     right: 0%;
     bottom: -0.49px;
@@ -451,18 +458,19 @@ main{
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
-    height:445px;
+    height:100%;
     
 }
 .card-activites img {
     border-radius: 5%;
     width: 100%;
-    height:445px;
+    height:100%;
     object-fit:cover;
 }
 
 footer{
     display: flex;
+    justify-content: space-around;
     background-color: #F2F2F2;
     width: 95%;
     height: 225px;
@@ -480,7 +488,7 @@ ul{
     flex-direction: column;
     margin-left: 45px;
     margin-top: 45px;
-    width: 400px;
+    width: 100%;
 }
 li{
     margin-bottom: 12px;
