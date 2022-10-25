@@ -114,12 +114,13 @@ main{
 }
 
 #recherche-container input{
-    width: 100%;
+    width: 30%;
+    max-width: 340px;
     height: 49px;
     border: none;
     font-size:18px;
     font-weight: 700;
-    padding-left: 10%;
+    padding-left: 2%;
     font-family:'Raleway', sans-serif;
 }
 
@@ -137,6 +138,9 @@ main{
     color:white ;
     font-family:'Raleway', sans-serif;
     cursor: pointer;
+}
+#button-search-mobil{
+    display: none;
 }
 
 
@@ -698,8 +702,202 @@ ul h3{
     
 /*mobile*/
 @media (max-width: 768px){
-    body{
-        background-color: blue;
-    }
+/*header*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#logo {
+    width: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+#menu{
+    width: 100%;
+    margin-bottom: 5%;
+}
+#nav-container-hebergement {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #D9D9D9;
+}
+#nav-container-activites {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #D9D9D9;
+}
+#before-main {
+    margin-left: 0%;
+}
+/*filtre*/
+#accroche{
+    width: 80%;
+    margin-left: 4%;
+}
+#accroche p{
+    margin-top:2%;
+}
+#filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    width: 95%;
+}
+#filter h3{
+    margin-bottom: 2.5%;
+    width: 95%;
+}
+#button-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button {
+    display: flex;
+    width: 45%;
+    height: 40px;
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+    padding: 1% 3%;
+    border-radius: 25px;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+}
+
+#nblogement {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+#nblogement p{
+    width: 80%;
+    font-size: small;
+}
+#recherche{
+    display:flex;
+    flex-direction: column;
+    
+}
+#recherche-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    width: 100%;
+}
+#recherche-container #map-marker {
+    width: 10%;
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    background-color: #F2F2F2;
+}
+
+#recherche-container input {
+    width: 60%;
+    height: 49px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+#button-search{
+    display:none
+}
+#button-search-mobil{
+    display: flex;
+    display: flex;
+    height: 49px;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    background: #0065FC;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    color:white ;
+    font-family:'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+#hebergements {
+    margin-left: 0%;
+    max-width: 900px;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-top: 3%;
+    border-radius: 20px;
+    order: 1;
+}
+#les-plus-populaires {
+    margin-left: 0%;
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 3%;
+   
+}
+#annonce-populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.lien-card-populaires {
+    min-width: 222px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card-populaires {
+    width: 85%;
+    max-width:400px;
+    height: 22%;
+    max-height: 25%;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 0%;
+    margin-top: 6%;
+}
+.card-populaires > div:first-child {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    width: 40%;
+    min-width: 110px;
+}
+.card-populaires .text-etoile {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 19%;
+}
+
+
+
+
+
+
 
 }
