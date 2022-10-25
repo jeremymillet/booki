@@ -104,6 +104,7 @@ main{
 }
 #recherche-container #map-marker{
     width: 4%;
+    min-width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,6 +200,7 @@ main{
 .button p {
     display: flex;
     font-size:90%;
+    font-weight: 700;
 }
 
 .button:hover{
@@ -280,7 +282,7 @@ main{
 .etoile i {
     color: #0065FC;
 }
-.transparent {
+#transparent {
     color: grey;
 }
 /* img */
@@ -526,6 +528,9 @@ main{
     display: flex;
     flex-direction: column;
 }
+#logo{
+    width: 8%;
+}
 #filter {
     display: flex;
     margin-top: 2.5%;
@@ -569,7 +574,7 @@ main{
 #annonce-hebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 90%;
 }
 
@@ -602,7 +607,7 @@ main{
     flex-direction: column;
     margin-left: 4%;
     width: 92%;
-    height: 300px;
+    height: 250px;
     max-height: 1000px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -630,7 +635,7 @@ main{
 .card-populaires .text-etoile {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 0%;
     height: 20%;
     min-width: 116px;
 }
