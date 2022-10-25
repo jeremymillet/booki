@@ -258,7 +258,7 @@ main {
 #annonce-hebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 90%;
 }
 
@@ -310,7 +310,6 @@ main {
 
 /* etoile */
 .etoile {
-    width: 100%;
     margin-left: 6%;
     margin-top: 2%;
 }
@@ -349,7 +348,7 @@ main {
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-top: 3%;
-    max-width: 500px;
+    max-width: 499px;
 
 
 }
@@ -423,7 +422,6 @@ main {
 
 /* etoile */
 .card-populaires .etoile {
-    width: 100%;
     position: absolute;
     top: 80%;
 
@@ -536,7 +534,6 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width: 95%;
     height: 225px;
     margin-left: 5%;
     margin-right: 5%;
@@ -646,7 +643,7 @@ ul h3 {
         justify-content: space-between;
         width: 90%;
     }
-
+    
     /*populaires*/
     #les-plus-populaires #titre-populaires {
         display: flex;
@@ -730,7 +727,23 @@ ul h3 {
         width: 40%;
         min-width: 100px;
     }
-
+    .card-activites .card-texte H2 {
+        padding-left: 8%;
+        margin-top: 7%;
+        margin-bottom:10%;
+    }
+    .card-activites .card-texte {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom: -0.49px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 20px 20px;
+    }
     /*footer*/
     footer {
         display: flex;
@@ -746,7 +759,7 @@ ul h3 {
         width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
     }
 
@@ -855,7 +868,7 @@ ul h3 {
         align-items: center;
         width: 100%;
     }
-
+    
     .button {
         display: flex;
         width: 45%;
