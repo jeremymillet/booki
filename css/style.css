@@ -1081,7 +1081,23 @@ ul h3 {
         display: flex;
         justify-content: center;
     }
-
+    .card-activites .card-texte {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom: -0.49px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    .card-activites .card-texte H2 {
+        padding-left: 8%;
+        margin-top: 5%;
+    }
     .card-activites {
         width: 85%;
         height: 85%;
