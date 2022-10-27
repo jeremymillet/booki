@@ -328,13 +328,13 @@ main {
 
 
 /* affichez plus  */
-#plus {
+.plus {
     margin-left: 5%;
     text-decoration: none;
     margin-bottom: 6%;
 }
 
-#plus p {
+.plus p {
     font-size: 18px;
     font-weight: 700;
 }
@@ -536,7 +536,6 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width: 90%;
     height: 225px;
     margin-left: 5%;
     margin-right: 5%;
