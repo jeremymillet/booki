@@ -560,12 +560,11 @@ ul {
     flex-direction: column;
     margin-left: 15%;
     margin-top: 5%;
-    width: 50%;
+    width: 100%;
     padding: 0%;
 }
 
 li {
-    max-width: 350px;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 12px;
@@ -822,17 +821,6 @@ ul h3 {
         border-bottom: 2px solid #D9D9D9;
     }
 
-    #nav-container-hebergement:hover {
-        border-top: none;
-        border-bottom: solid #0065FC;
-    }
-
-    #nav-container-activites:hover {
-        border-top: none;
-        border-bottom: solid #0065FC;
-    }
-
-
     #before-main {
         margin-left: 0%;
     }
@@ -946,72 +934,27 @@ ul h3 {
         cursor: pointer;
     }
 
-    #button-search-mobil button {
-        background-color: #0065FC;
-        border: none;
-        color: white;
-        display: flex;
-        justify-content: center;
-
-
-    }
-
-    .card-populaires .etoile {
-        width: 50%;
-        position: absolute;
-        top: 80%;
-        right: 8%;
-    }
-
     #hebergements {
         margin-left: 0%;
         max-width: 900px;
         width: 100%;
-        background-color: white;
+        background-color: #F2F2F2;
         margin-top: 3%;
-        border-radius: 0px;
+        border-radius: 20px;
         order: 1;
     }
 
-    #annonce-hebergement {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .lien-card-hebergement {
-        min-width: 222px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .card-hebergement {
-        width: 85%;
-        height: 85%;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin-bottom: 5%;
-        margin-left: 0%;
-    }
-    #plus {
-        display: none;
-    }
     #les-plus-populaires {
         margin-left: 0%;
         width: 100%;
         height: auto;
         min-height: 650px;
         background-color: #F2F2F2;
-        border-radius: 0px;
+        border-radius: 20px;
         margin-top: 3%;
+
     }
-    #les-plus-populaires #titre-populaires {
-        margin-top: 4%;
-    }
+
     #annonce-populaires {
         display: flex;
         flex-direction: column;
@@ -1019,12 +962,14 @@ ul h3 {
         width: 100%;
         height: 100%;
     }
+
     .lien-card-populaires {
         min-width: 222px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .card-populaires {
         width: 85%;
         max-width: 400px;
@@ -1053,79 +998,5 @@ ul h3 {
         height: 19%;
     }
 
-    #activites {
-        margin-top: 0%;
-        margin-left: 0%;
-        width: 100%;
-        margin-bottom: 0%;
-        display: flex;
-        flex-direction: column;
-        max-width: 1400px;
-    }
-    #titre-activites{
-        margin-left: 5%;
-        margin-bottom: 2%;
-        padding-top: 3%;
-        width: 50%;
-    }
-    #annonce-activites {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-top: 1%;
-    }
-
-    .lien-card-activites {
-        min-width: 222px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .card-activites {
-        width: 85%;
-        height: 85%;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin-bottom: 5%;
-        margin-left: 0%;
-    }
-    .card-activites .card-texte {
-        width: 100%;
-        height: 56px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        bottom: -0.49px;
-        background: #FFFFFF;
-        border-radius: 0px 0px 20px 20px;
-    }
-    .card-activites .card-texte H2 {
-        padding-left: 8%;
-        margin-top: 5%;
-    }
-    .card-activites img {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 100%;
-        max-height: 200px;
-        object-fit: cover;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-around;
-        background-color: #F2F2F2;
-        width: 100%;
-        height: auto;
-        padding-top: 10%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
 
 }
