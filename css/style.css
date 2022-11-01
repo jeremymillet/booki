@@ -5,10 +5,15 @@
     }
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; 
+}
+
 /* font*/
 h1,
 h2,
-h3,
+h3, 
 p,
 a {
     font-family: 'Raleway', sans-serif;
@@ -65,24 +70,6 @@ main {
 
 }
 
-#nav-container-hebergement {
-    width: 162px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#nav-container-activites {
-    width: 162px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 #logo {
     align-items: center;
     display: flex;
@@ -95,17 +82,21 @@ main {
 
 }
 
-/* header hover animation*/
-
-#nav-container-hebergement:hover {
-    border-top: solid #0065FC;
-    color: #0065FC;
+nav > div {
+    width: 162px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid white;
 }
 
-#nav-container-activites:hover {
+/* header hover animation*/
+nav > div:hover {
     border-top: solid #0065FC;
-    color: #0065FC;
-
+}
+nav > div a:hover{
+    color:#0065FC;
 }
 
 
@@ -139,7 +130,7 @@ main {
     font-size: 18px;
     font-weight: 700;
     padding-left: 2%;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 
@@ -154,7 +145,6 @@ main {
     border-top-right-radius: 15px;
     border: none;
     color: white;
-    font-family: 'Raleway', sans-serif;
     cursor: pointer;
 }
 
@@ -194,7 +184,6 @@ main {
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     margin-right: 2%;
-
 }
 
 #info i {
@@ -812,7 +801,7 @@ ul h3 {
         margin-bottom: 5%;
     }
 
-    #nav-container-hebergement {
+    nav > div {
         width: 50%;
         height: 50px;
         display: flex;
@@ -821,23 +810,13 @@ ul h3 {
         border-bottom: 2px solid #D9D9D9;
     }
 
-    #nav-container-activites {
-        width: 50%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid #D9D9D9;
-    }
-    #nav-container-hebergement:hover {
-        border-top: none;
+    nav > div:hover {
+        border-top: white;
         border-bottom: solid #0065FC;
     }
-    
-    #nav-container-activites:hover {
-        border-top: none;
-        border-bottom: solid #0065FC;
-    }
+    nav > div a:hover{
+        color:#0065FC;
+    } 
 
     #before-main {
         margin-left: 0%;
