@@ -53,11 +53,7 @@ main, #menu{
     display: flex;
 }
 
-#nav-hebergements {
-    text-decoration: none;
-    width: auto;
-}
-#nav-activites {
+#nav-hebergements,#nav-activites{
     text-decoration: none;
     width: auto;
 }
@@ -76,7 +72,7 @@ nav > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid white;
+    border-top: solid transparent;
 }
 
 /* header hover animation*/
@@ -91,12 +87,11 @@ nav > div a:hover{
 #before-main {
     margin-left: 4%;
 }
-
+/* recherche */
 #recherche-container {
     display: flex;
     margin-top: 1.5%;
 }
-
 #recherche-container #map-marker {
     width: 4%;
     min-width: 45px;
@@ -107,7 +102,6 @@ nav > div a:hover{
     border-top-left-radius: 20%;
     background-color: #F2F2F2;
 }
-
 #recherche-container input {
     width: 30%;
     max-width: 340px;
@@ -116,10 +110,7 @@ nav > div a:hover{
     font-size: 18px;
     font-weight: 700;
     padding-left: 2%;
-    
 }
-
-
 #button-search button {
     display: flex;
     height: 49px;
@@ -133,64 +124,26 @@ nav > div a:hover{
     color: white;
     cursor: pointer;
 }
-
 #button-search-mobil {
     display: none;
 }
-
-
-/* recherche */
-
+/* filter */
 #filter {
     display: flex;
     margin-top: 2.5%;
     width: 100%;
     align-items: center;
 }
-
-#button-filter {
-    margin-left: 4%;
-}
-
-#nblogement {
-    display: flex;
-    margin-top: 2.5%;
-    width: 70%;
-}
-
-#nblogement p {
-    height: 19px;
-}
-
-#info {
-    display: flex;
-    justify-content: center;
-    width: 3%;
-    height: 3%;
-    border: 1px solid #D9D9D9;
-    border-radius: 50%;
-    margin-right: 2%;
-}
-
-#info i {
-    color: #0065FC;
-    padding: 50%;
-}
-
-
-/* filter */
-
 #button-filter {
     display: flex;
     align-items: center;
     width: 80%;
+    margin-left: 4%;
 }
-
 #button-filter .button i {
     margin-right: 10px;
     color: #0065FC;
 }
-
 .button {
     display: flex;
     width: auto;
@@ -200,18 +153,36 @@ nav > div a:hover{
     align-items: center;
     border: 2px solid #D9D9D9;
 }
-
 .button p {
     display: flex;
     font-size: 90%;
     font-weight: 700;
 }
-
 .button:hover {
     background: #DEEBFF;
     cursor: pointer;
 }
-
+#info {
+    display: flex;
+    justify-content: center;
+    width: 3%;
+    height: 3%;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+#info i {
+    color: #0065FC;
+    padding: 50%;
+}
+#nblogement {
+    display: flex;
+    margin-top: 2.5%;
+    width: 70%;
+}
+#nblogement p {
+    height: 19px;
+}
 /* main annonce */
 
 #hebergements {
@@ -251,16 +222,11 @@ nav > div a:hover{
     border-radius: 20px;
     margin-bottom: 15%;
     margin-left: 15%;
-
-
 }
 
 .card-hebergement>div:first-child {
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    width: 100%;
-
 }
 
 .card-hebergement img {
