@@ -553,11 +553,11 @@ ul {
 }
 
 @media (min-width:1401px) {
-    body{
+    body {
         display: flex;
         justify-content: center;
     }
-    
+
 }
 
 /*tablette*/
@@ -616,8 +616,10 @@ ul {
     #annonce-populaires {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     #les-plus-populaires {
@@ -627,8 +629,12 @@ ul {
         margin-left: 0px;
     }
 
+    .lien-card-populaires {
+        width: 32%;
+    }
+
     .card-populaires {
-        width: 85%;
+        width: 100%;
         height: 23%;
         max-height: 25%;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -730,6 +736,10 @@ ul {
         width: 100%;
     }
 
+    #button-filter .button i {
+        font-size: 25px;
+    }
+
     .button {
         width: 45%;
         max-width: 250px;
@@ -751,7 +761,12 @@ ul {
     }
 
     #info {
-        width: 5%;
+        width: 6%;
+    }
+
+    #info i {
+        font-size: 18px;
+        padding: 15px
     }
 
     #recherche {
@@ -835,7 +850,7 @@ ul {
 
     #les-plus-populaires {
         height: auto;
-        min-height: 650px;
+        min-height: 600px;
         margin-top: 3%;
         max-width: 550px;
     }
@@ -846,11 +861,21 @@ ul {
     }
 
     .lien-card-populaires {
+        width: 100%;
         max-width: 400px;
+        display: flex;
+        justify-content: center;
     }
 
     .card-populaires {
-        max-width: none;
+        width: 85%;
+        height: 144px;
+        max-height: 144px;
+        min-width: 223px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
     }
 
     .card-populaires .text-etoile {
